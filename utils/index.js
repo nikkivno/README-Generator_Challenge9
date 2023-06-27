@@ -2,7 +2,59 @@
 const inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
-const questions = [];
+inquirer
+.prompt([
+    {
+        type: 'input',
+        message: 'What is your project title?',
+        name: 'Project Title',
+    },
+    {
+        type: 'input',
+        message: 'What is your project description?',
+        name: 'Description',
+    },
+    {
+        type:
+        message:
+        name:
+    },
+    {
+        type:
+        message:
+        name:
+    },
+    {
+        type:
+        message:
+        name:
+    },
+    {
+        type:
+        message:
+        name:
+    },
+    {
+        type:
+        message:
+        name:
+    },
+    {
+        type:
+        message:
+        name:
+    },
+    {
+        type:
+        message:
+        name:
+    },
+    {
+        type:
+        message:
+        name:
+    },
+])
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
