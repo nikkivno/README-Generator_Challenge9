@@ -12,47 +12,27 @@ inquirer
     {
         type: 'input',
         message: 'What is your project description?',
-        name: 'Description',
+        name: 'Project Description',
     },
     {
-        type:
-        message:
-        name:
+        type: 'input',
+        message:'What are the steps required to install your project?',
+        name:'Installation',
     },
     {
-        type:
-        message:
-        name:
+        type: 'input',
+        message:'Provide intructions and examples for use',
+        name:'Usage',
     },
     {
-        type:
-        message:
-        name:
+        type: 'input',
+        message:'Do you have any collaborators to credit?',
+        name:'Credits',
     },
     {
-        type:
-        message:
-        name:
-    },
-    {
-        type:
-        message:
-        name:
-    },
-    {
-        type:
-        message:
-        name:
-    },
-    {
-        type:
-        message:
-        name:
-    },
-    {
-        type:
-        message:
-        name:
+        type: 'input',
+        message:'What license are you using for this project?',
+        name:'License',
     },
 ])
 
