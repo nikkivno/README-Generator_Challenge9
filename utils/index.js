@@ -82,7 +82,9 @@ inquirer
     ${answers.Tests}
 
     ## Questions
-    ${'If you have any questions you can reach out to me at ' + answers.Questions + ' on Github.'} ${'Or through email at ' + answers.Email + '.'}
+    ${'If you have any questions you can reach out to me at:'}
+    ${'Github: ' + answers.Questions} 
+    ${'Email: ' + answers.Email}
     `;
 
 fs.writeFile('README.md', readmeContent, (error) =>
