@@ -15,11 +15,6 @@ inquirer
         message: 'What is your project description?',
         name: 'Description',
     },
-      {
-        type: 'input',
-        message:'Please list the table of contents:',
-        name:'TableofContents',
-    },
     {
         type: 'input',
         message:'What are the steps required to install your project?',
@@ -38,7 +33,12 @@ inquirer
     {
         type: 'list',
         message:'What license are you using for this project?',
-        choices: ['MIT License', 'Apache License', 'BSD License', 'GPL License', 'Mozilla Public License' ],
+        choices: [
+            'MIT License', 
+            'Apache License', 
+            'BSD License', 
+            'Mozilla Public License' 
+        ],
         name:'License',
     },
         {
@@ -58,14 +58,13 @@ inquirer
     },
 ])
 .then((answers) => {
-    const readmeContent =`
+    const readmeContent = `
     # ${answers.ProjectTitle}
 
     ## Description
     ${answers.Description}
 
     ## Table of Contents 
-    ${answers.TableofContents}
 
     ## Installation
     ${answers.Installation}
