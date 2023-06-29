@@ -46,6 +46,16 @@ inquirer
         message:'Please include test instructions:',
         name:'Tests',
     },
+    {
+        type: 'input',
+        message:'What is your github username?',
+        name:'Questions',
+    },
+        {    
+        type: 'input',
+        message: 'What is your email?',
+        name:'Email',
+    },
 ])
 .then((answers) => {
     const readmeContent =`
@@ -71,7 +81,11 @@ inquirer
 
     ## Tests 
     ${answers.Tests}
+
+    ## Questions
+    ${'If you have any questions you can reach out to me at ' + answers.Questions + ' on Github.'} ${'Or through email at ' + answers.Email + '.'}
     `;
+
 fs.writeFile('README.md', readmeContent, (error) =>
 error ? console.error(error) : console.log('Success!')
 )
