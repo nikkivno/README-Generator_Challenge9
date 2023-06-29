@@ -37,7 +37,8 @@ inquirer
             'MIT License', 
             'Apache License', 
             'BSD License', 
-            'Mozilla Public License' 
+            'Mozilla Public License',
+            'N/A' 
         ],
         name:'License',
     },
@@ -62,30 +63,30 @@ inquirer
 # ${answers.ProjectTitle}
 
 ## Description
-    ${answers.Description}
+${answers.Description}
 
 ## Table of Contents 
 
 ## Installation
-    ${answers.Installation}
+${answers.Installation}
 
 ## Usage 
-    ${answers.Usage}
+${answers.Usage}
 
 ## Contributing
-    ${answers.Contributing}
+${answers.Contributing}
 
 ## License
-    ${answers.License}
+${answers.License}
 
 ## Tests 
-    ${answers.Tests}
+${answers.Tests}
 
 ## Questions
-    ${'If you have any questions you can reach out to me at:'}
-    ${'Github: ' + answers.Questions} 
-    ${'Email: ' + answers.Email}
-    `;
+${'If you have any questions you can reach out to me at:'} \n
+${'Github: ' + answers.Questions} \n
+${'Email: ' + answers.Email}
+`;
 
 fs.writeFile('README.md', readmeContent, (error) =>
 error ? console.error(error) : console.log('Success!')
