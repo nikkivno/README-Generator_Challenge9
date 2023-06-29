@@ -8,7 +8,7 @@ inquirer
     {
         type: 'input',
         message: 'What is your project title?',
-        name: 'Project Title',
+        name: 'ProjectTitle',
     },
     {
         type: 'input',
@@ -18,7 +18,7 @@ inquirer
       {
         type: 'input',
         message:'Please list the table of contents:',
-        name:'Table of Contents',
+        name:'TableofContents',
     },
     {
         type: 'input',
@@ -45,19 +45,36 @@ inquirer
         message:'Please include test instructions:',
         name:'Tests',
     },
-
 ])
+.then((answers) => {
+    const readmeContent =`
+    # ${answers.ProjectTitle}
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+    ## Description
+    ${answers.Description}
 
-fs.readFile('inquirer', 'uft8', (error, data) =>
-error ? console.error(error) : console.log(data)
-);
+    ## Table of Contents 
+    ${answers.TableofContents}
 
-fs.writeFile('README.md', process.argv[2], (error) =>
+    ## Installation
+    ${answers.Installation}
+
+    ## Usage 
+    ${answers.Usage}
+
+    ## Contributing
+    ${answers.Contributing}
+
+    ## License
+    ${answers.License}
+
+    ## Tests 
+    ${answers.Tests}
+    `;
+fs.writeFile('README.md', readmeContent, (error) =>
 error ? console.error(error) : console.log('Success!')
-);
+)
+})
 
 // TODO: Create a function to initialize app
 function init() {}
