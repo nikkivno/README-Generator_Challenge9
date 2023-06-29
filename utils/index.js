@@ -59,29 +59,29 @@ inquirer
 ])
 .then((answers) => {
     const readmeContent = `
-    # ${answers.ProjectTitle}
+# ${answers.ProjectTitle}
 
-    ## Description
+## Description
     ${answers.Description}
 
-    ## Table of Contents 
+## Table of Contents 
 
-    ## Installation
+## Installation
     ${answers.Installation}
 
-    ## Usage 
+## Usage 
     ${answers.Usage}
 
-    ## Contributing
+## Contributing
     ${answers.Contributing}
 
-    ## License
+## License
     ${answers.License}
 
-    ## Tests 
+## Tests 
     ${answers.Tests}
 
-    ## Questions
+## Questions
     ${'If you have any questions you can reach out to me at:'}
     ${'Github: ' + answers.Questions} 
     ${'Email: ' + answers.Email}
