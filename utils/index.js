@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// NPM Packages
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
+// Questions and Answers/Writing File
 inquirer
 .prompt([
     {
@@ -36,8 +36,9 @@ inquirer
         name:'Contributing',
     },
     {
-        type: 'input',
+        type: 'list',
         message:'What license are you using for this project?',
+        choices: ['MIT License', 'Apache License', 'BSD License', 'GPL License', 'Mozilla Public License' ],
         name:'License',
     },
         {
@@ -75,9 +76,3 @@ fs.writeFile('README.md', readmeContent, (error) =>
 error ? console.error(error) : console.log('Success!')
 )
 })
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
