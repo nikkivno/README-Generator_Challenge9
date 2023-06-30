@@ -65,7 +65,8 @@ inquirer
 ## Description
 ${answers.Description}
 
-## Table of Contents 
+## Table of Contents
+ 
 
 ## Installation
 ${answers.Installation}
