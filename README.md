@@ -9,6 +9,7 @@ In this project I am exploring the functions and uses of Node.js by creating a f
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Examples](#examples)
 - [License](#license)
 - [Tests](#tests)
 - [Questions](#questions)
@@ -25,7 +26,7 @@ Below are listed some resources I used to complete this project:</br>
  License Information - https://opensource.org/<br>
  Badge Generation - https://shields.io/
 
-## Examples
+## Examples <a id='examples'></a>
 
 If 'N/A' is selected under License Options
 
