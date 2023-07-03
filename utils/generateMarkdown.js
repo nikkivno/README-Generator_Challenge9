@@ -75,7 +75,7 @@ ${licenseBadge}
 ${data.Description}
 
 ## Table of Contents
-- [Installation](#installatoin)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -83,25 +83,25 @@ ${data.Description}
 - [Questions](#questions)
 
 
-## Installation <a name='installation'></a>
+## Installation <a id='installation'></a>
 ${data.Installation}
 
-## Usage <a name='usage'></a>
+## Usage <a id='usage'></a>
 ${data.Usage}
 
-## Contributing <a name='contributing'></a>
+## Contributing <a id='contributing'></a>
 ${data.Contributing}
 
-## License < name='license'></a>
+## License <a id='license'></a>
 ${licenseSection}\n
 ${licenseLink}
 
-## Tests <a name='tests'></a>
+## Tests <a id='tests'></a>
 ${data.Tests}
 
-## Questions <a name='questions'></a>
+## Questions <a id='questions'></a>
 If you have any questions, you can reach out to me at:
-Github: ${data.Questions}
+Github: ${data.Questions} \n
 Email: ${data.Email}
 `;
 }
