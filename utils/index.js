@@ -38,8 +38,8 @@ inquirer
         message:'What license are you using for this project?',
         choices: [
             'MIT License', 
-            'Apache License', 
-            'BSD License', 
+            'Apache 2.0', 
+            'BSD 3-Clause License', 
             'Mozilla Public License',
             'N/A' 
         ],
@@ -61,6 +61,7 @@ inquirer
         name:'Email',
     },
 ]) 
+// connecting to generateMarkdown file
 .then((answers) => {
     const readmeContent = generateMarkdown(answers);
 
@@ -69,44 +70,3 @@ inquirer
     );
   });
 
-
-
-
-
-
-
-// .then((answers) => {
-//     const readmeContent = `
-// # ${answers.ProjectTitle}
-
-// ## Description
-// ${answers.Description}
-
-// ## Table of Contents
- 
-
-// ## Installation
-// ${answers.Installation}
-
-// ## Usage 
-// ${answers.Usage}
-
-// ## Contributing
-// ${answers.Contributing}
-
-// ## License
-// ${answers.License}
-
-// ## Tests 
-// ${answers.Tests}
-
-// ## Questions
-// ${'If you have any questions you can reach out to me at:'} \n
-// ${'Github: ' + answers.Questions} \n
-// ${'Email: ' + answers.Email}
-// `;
-
-// fs.writeFile('README.md', readmeContent, (error) =>
-// error ? console.error(error) : console.log('Success!')
-// )
-// })
