@@ -8,6 +8,8 @@ function renderLicenseBadge(license) {
     return '![BSD License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)'
   } else if (license === 'Mozilla Public License 2.0') {
     return '![Mozilla License](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)'
+} else if (license === 'N/A') {
+  return ''
 }
 }
 
