@@ -15,13 +15,13 @@ function renderLicenseBadge(license) {
 
 function renderLicenseLink(license) {
   if (license === 'MIT License') {
-    return 'https://opensource.org/license/mit/'
+    return 'https://choosealicense.com/licenses/mit/'
   } else if (license === 'Apache 2.0') {
-    return 'https://opensource.org/license/apache-2-0/'
+    return 'https://choosealicense.com/licenses/apache-2.0/'
    } else if (license === 'BSD 3-Clause License') {
      return 'https://opensource.org/license/bsd-3-clause/'
    } else if (license === 'Mozilla Public License 2.0'){
-     return 'https://opensource.org/license/mpl-2-0/'
+     return 'https://choosealicense.com/licenses/mpl-2.0/'
   } else if (license === 'N/A') {
     return 'No Applicable Licenses attached to this project'
   }

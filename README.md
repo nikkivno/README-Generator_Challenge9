@@ -24,6 +24,7 @@ The main use for this tool is to allow users to get a professional and cohesive 
 ## Contributing <a id='contributing'></a>
 Below are listed some resources I used to complete this project:</br>
  License Information - https://opensource.org/<br>
+ License Information - https://choosealicense.com/<br>
  Badge Generation - https://shields.io/
 
 ## Examples <a id='examples'></a>
