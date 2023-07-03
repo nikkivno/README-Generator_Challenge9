@@ -2,6 +2,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+
+const generateMarkdown = require('./generateMarkdown');
+
 // Questions and Answers/Writing File
 inquirer
 .prompt([
@@ -57,39 +60,53 @@ inquirer
         message: 'What is your email?',
         name:'Email',
     },
-])
+]) 
 .then((answers) => {
-    const readmeContent = `
-# ${answers.ProjectTitle}
+    const readmeContent = generateMarkdown(answers);
 
-## Description
-${answers.Description}
+    fs.writeFile('README.md', readmeContent, (error) =>
+      error ? console.error(error) : console.log('Success!')
+    );
+  });
 
-## Table of Contents
+
+
+
+
+
+
+// .then((answers) => {
+//     const readmeContent = `
+// # ${answers.ProjectTitle}
+
+// ## Description
+// ${answers.Description}
+
+// ## Table of Contents
  
 
-## Installation
-${answers.Installation}
+// ## Installation
+// ${answers.Installation}
 
-## Usage 
-${answers.Usage}
+// ## Usage 
+// ${answers.Usage}
 
-## Contributing
-${answers.Contributing}
+// ## Contributing
+// ${answers.Contributing}
 
-## License
-${answers.License}
+// ## License
+// ${answers.License}
 
-## Tests 
-${answers.Tests}
+// ## Tests 
+// ${answers.Tests}
 
-## Questions
-${'If you have any questions you can reach out to me at:'} \n
-${'Github: ' + answers.Questions} \n
-${'Email: ' + answers.Email}
-`;
+// ## Questions
+// ${'If you have any questions you can reach out to me at:'} \n
+// ${'Github: ' + answers.Questions} \n
+// ${'Email: ' + answers.Email}
+// `;
 
-fs.writeFile('README.md', readmeContent, (error) =>
-error ? console.error(error) : console.log('Success!')
-)
-})
+// fs.writeFile('README.md', readmeContent, (error) =>
+// error ? console.error(error) : console.log('Success!')
+// )
+// })
