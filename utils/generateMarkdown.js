@@ -74,23 +74,32 @@ ${licenseBadge}
 ## Description
 ${data.Description}
 
-## Installation
+## Table of Contents
+- [Installation](#installatoin)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Tests](#tests)
+- [Questions](#questions)
+
+
+## Installation <a name='installation'></a>
 ${data.Installation}
 
-## Usage
+## Usage <a name='usage'></a>
 ${data.Usage}
 
-## Contributing
+## Contributing <a name='contributing'></a>
 ${data.Contributing}
 
-## License
+## License < name='license'></a>
 ${licenseSection}\n
 ${licenseLink}
 
-## Tests
+## Tests <a name='tests'></a>
 ${data.Tests}
 
-## Questions
+## Questions <a name='questions'></a>
 If you have any questions, you can reach out to me at:
 Github: ${data.Questions}
 Email: ${data.Email}

@@ -40,7 +40,7 @@ inquirer
             'MIT License', 
             'Apache 2.0', 
             'BSD 3-Clause License', 
-            'Mozilla Public License',
+            'Mozilla Public License 2.0',
             'N/A' 
         ],
         name:'License',
