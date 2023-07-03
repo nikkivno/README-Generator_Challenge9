@@ -25,6 +25,20 @@ Below are listed some resources I used to complete this project:</br>
  License Information - https://opensource.org/<br>
  Badge Generation - https://shields.io/
 
+## Examples
+
+If 'N/A' is selected under License Options
+
+![No License](./utils/Images/no-license.png)
+
+
+Terminal License Selection
+
+![License Selection](./utils/Images/license-selection.png)
+
+Terminal Completed Questions
+
+![Completed Questions](./utils/Images/completed-questions.png)
 
 ## License <a id='license'></a>
 This project is licensed under the MIT License.
